@@ -17,7 +17,7 @@ namespace RDebugForcer
             var harmony = new HarmonyLib.Harmony("com.lightfall.rdebugforcer");
             harmony.PatchAll();
             LoggerInstance.Msg("You're good to go, Intern! I patched up your game to enable some debug functions. Type \"DESPACIT0\" to access level debugging features. Have fun, Intern!");
-            LoggerInstance.Warning("Note: This game was patched which allows developer only functions. Do not report any issues to 7th Beat Games.");
+            LoggerInstance.Warning("Note: This game was patched with a mod which allows developer only functions. Do not report any issues to 7th Beat Games.");
         }
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
