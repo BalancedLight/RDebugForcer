@@ -14,9 +14,12 @@ Shift-M force enables Nurse counting on every row
 
 Shift-A toggles Otto (Autoplay)
 
-Shift-W instantly ends level and give you an S+
+Shift-W instantly ends level and gives you an S+
 
 Shift-Y instantly ends the level and gives you an F
 
 type FFDF to freeze the level on the current bar
+
+## Important note
+**This mod enables features that only developers of the game should have! DO NOT REPORT ANY ISSUES TO 7TH BEAT GAMES!**
 
