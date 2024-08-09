@@ -1,6 +1,14 @@
 # RDebugForcer
 **RDebugForcer** is a MelonLoader mod for Rhythm Doctor that forcibly enables the hidden debug/developer mode.
 
+## Important note
+### DO NOT REPORT ANY ISSUES WITH THIS MOD ACTIVE TO 7TH BEAT GAMES!
+
+**This mod enables features that only developers of the game should have!**
+
+Any custom methods or events found using this mod can break at anytime, and probably should not be used in custom levels! Not that you can't, though.
+
+
 ## Installation
 1. Download and install [MelonLoader](https://github.com/LavaGang/MelonLoader)
 
@@ -30,13 +38,10 @@ Type "**DESPACIT0**" anywhere in-game to enable debugging commands and menus.
 
 **Shift-]** plays a bass drop effect and skips forward a bar
 
+Press **Spacebar** on a "Move Camera" event to enable true camera movement.
+
 **F6** toggles "Narrate Descriptions"
 
 **F7** toggles "Narrate Subtitles"
 
 **F8** toggles "Narrator"
-
-
-## Important note
-**This mod enables features that only developers of the game should have! DO NOT REPORT ANY ISSUES TO 7TH BEAT GAMES!**
-
