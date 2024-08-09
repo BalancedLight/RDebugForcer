@@ -1,7 +1,7 @@
 ﻿using MelonLoader;
 using RDebugForcer; // The namespace of your mod class
 // ...
-[assembly: MelonInfo(typeof(RDebugForceMod), "Rhythm Doctor Debug Forcer", "0.0.2", "lightfall")]
+[assembly: MelonInfo(typeof(RDebugForceMod), "Rhythm Doctor Debug Forcer", "0.0.4", "lightfall")]
 [assembly: MelonColor(System.ConsoleColor.DarkYellow)]
 
 // Create and Setup a MelonGame Attribute to mark a Melon as Universal or Compatible with specific Games.
