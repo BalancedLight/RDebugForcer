@@ -12,6 +12,10 @@ Type "**DESPACIT0**" anywhere in-game to enable debugging commands and menus.
 
 **Shift-B** toggles all beatsounds
 
+**Shift-.** toggles all music
+
+**Shift-'** kills all active and future beats
+
 **Shift-M** force enables Nurse counting on every row
 
 **Shift-A** toggles Otto (Autoplay)
@@ -24,7 +28,7 @@ Type "**DESPACIT0**" anywhere in-game to enable debugging commands and menus.
 
 **Shift-/** completely stops the level in it's place
 
-**Shift-]** plays a bass drop effect
+**Shift-]** plays a bass drop effect and skips forward a bar
 
 **F6** toggles "Narrate Descriptions"
 
