@@ -4,9 +4,13 @@
 ## Important note
 ### DO NOT REPORT ANY ISSUES WITH THIS MOD ACTIVE TO 7TH BEAT GAMES!
 
-**This mod enables features that only developers of the game should have!**
+_**Do not bug any 7th Beat Games staff about any upcoming or unreleased features that may be present via debug mode, either.**_
+
+This mod enables features that only developers of the game should have!
 
 Any custom methods or events found using this mod can break at anytime, and probably should not be used in custom levels! Not that you can't, though.
+
+
 
 
 ## Installation
