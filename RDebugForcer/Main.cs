@@ -64,22 +64,17 @@ namespace RDebugForcer
     {
         private static readonly LevelEventType[] hiddenEvents = new LevelEventType[]
         {
-            LevelEventType.AdvanceText,
-            LevelEventType.ShowSubdivisionsRows,
-            LevelEventType.CommentShow,
-            LevelEventType.WindowResize,
-            LevelEventType.ReadNarration,
-            LevelEventType.NarrateRowInfo
         };
+        //no more hidden events for u lol
 
         public static void Prefix(RDLevelEditor.SelectLevelEventPanel __instance)
         {
-            // Filter out hidden events from availableEvents
-            //(idk why but this doesn't even work lmao)
             var field = typeof(RDLevelEditor.SelectLevelEventPanel).GetField("hiddenEvents", BindingFlags.NonPublic | BindingFlags.Instance);
             if (field != null)
             {
                 field.SetValue(__instance, hiddenEvents);
+                // Add debug logging
+                Console.WriteLine("Hidden events force enabled");
             }
         }
     }
