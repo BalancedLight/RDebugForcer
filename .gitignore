@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md
+.github/instructions/codacy.instructions.md

@@ -14,25 +14,10 @@ namespace RDebugForcer
     {
         public override void OnApplicationStart()
         {
-            var harmony = new HarmonyLib.Harmony("com.lightfall.rdebugforcer");
+            var harmony = new HarmonyLib.Harmony("com.balancedlight.rdebugforcer");
             harmony.PatchAll();
             LoggerInstance.Msg("You're good to go, Intern! I patched up your game to enable some debug functions. Type \"DESPACIT0\" to access level debugging features. Have fun, Intern!");
-            LoggerInstance.Warning("Note: This game was patched with a mod which allows developer only functions. Do not report any issues to 7th Beat Games.");
-        }
-        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
-        {
-            if (sceneName == "scnMenu")
-            {
-                var menu = GameObject.FindObjectOfType<scnMenu>();
-                if (menu != null)
-                {
-                    var field = typeof(scnMenu).GetField("debug_showTestPixels", BindingFlags.NonPublic | BindingFlags.Instance);
-                    if (field != null)
-                    {
-                        field.SetValue(menu, true);
-                    }
-                }
-            }
+            LoggerInstance.Warning("Note: This game was patched with a mod which allows developer only functions. Do NOT report any issues to 7th Beat Games!");
         }
     }
 
@@ -43,19 +28,6 @@ namespace RDebugForcer
         {
             __result = true; // Force isDev to always return true
             return false; // Skip the original getter (tm)
-        }
-    }
-
-    [HarmonyPatch(typeof(scnMenu), "Awake")]
-    public static class ScnMenu_Awake_Patch
-    {
-        public static void Prefix(scnMenu __instance)
-        {
-            var field = typeof(scnMenu).GetField("debug_showTestPixels", BindingFlags.NonPublic | BindingFlags.Instance);
-            if (field != null)
-            {
-                field.SetValue(__instance, true);
-            }
         }
     }
 
@@ -73,7 +45,6 @@ namespace RDebugForcer
             if (field != null)
             {
                 field.SetValue(__instance, hiddenEvents);
-                // Add debug logging
                 Console.WriteLine("Hidden events force enabled");
             }
         }
